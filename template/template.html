@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Details</title>
+    <style>
+        body {
+        direction: rtl;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+        text-align: right;
+    }
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+    .logo img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: right;
+    }
+    th {
+        background-color: #f4f4f4;
+    }
+    .cancellation-policy {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .qr {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .qr img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        margin-bottom: 20px;
+        
+    }
+</style>
+</head>
+<body>
+    <div id="receipt">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Business Logo">
+            </div>
+            <table>
+                <!-- Table Header -->
+                <tr>
+                    <th>פרטי העסק</th>
+                    <th>פרטי העסקה</th>
+                </tr>
+                <!-- Data Row 1 -->
+                <tr>
+                    <td>אגודת הסטודנטים בראודה</td>
+                    <td>מספר עמותה: 58-031-983-8</td>
+                </tr>
+                <!-- Data Row 2 -->
+                <tr>
+                    <td>מעלה אורט 40</td>
+                    <td id="temp_trans_date">תאריך עסקה: </td>
+                </tr>
+                <!-- Data Row 3 -->
+                <tr>
+                    <td>כרמיאל</td>
+                    <td id="temp_trans_time">שעה עסקה: </td>
+                </tr>
+                <!-- Data Row 4 -->
+                <tr>
+                    <td>טל' 049901842</td>
+                    <td id="temp_trans_num">מספר חשבון עסקה: </td>
+                </tr>
+            </table>
+            
+            
+            <table>
+                <tr>
+                    <th colspan="4">פרטי המזמין ואמצעי התשלום</th>
+                </tr>
+                <tr>
+                    <td id="temp_fullname">שם: </td>
+                    <td id="temp_id">תעודת זהות: </td>
+                    <td id="temp_phone">טלפון: </td>
+                    <td id="temp_email">אימייל: </td>
+                </tr>
+                <tr>
+                    <td id="temp_payinfo" colspan="2">מס' כרטיס: </td>
+                    <td id="temp_actiontype" colspan="2">סוג פעולה: </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th colspan="3">פרטי האירוע</th>
+                </tr>
+                <tr>
+                    <td id="temp_event_info">תיאור: </td>
+                    <td id="temp_event_date">תאריך: </td>
+                    <td id="temp_event_time">שעה: </td>
+                </tr>
+                <tr>
+                    <td>סוג כרטיס: </td>
+                    <td id="temp_event_price">מחיר: </td>
+                    <td>מטבע: ש"ח</td>
+                </tr>
+            </table>
+            <div class="cancellation-policy">
+                <p>מדיניות ביטולים: [הוסף פה את מדיניות הביטולים שלך]</p>
+            </div>
+            <div class="qr">
+                <img id="qrimg" src="qr.png" alt="QR Code">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

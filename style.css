@@ -1,0 +1,86 @@
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Jost', sans-serif;
+	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+.main{
+	width: 350px;
+	height: 950px;
+	background: red;
+	overflow: hidden;
+	background: url('bg.jpg') no-repeat center / cover;
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+}
+#chk{
+	display: none;
+}
+.Testing{
+	position: relative;
+	width:100%;
+	height: 100%;
+}
+label{
+	color: #fff;
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 60px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+input{
+	width: 60%;
+	height: 20px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+.checkbox-container {
+	display: flex;
+	align-items: center; /* Aligns the items vertically in the center */
+	justify-content: start; /* Aligns the content to the start of the container */
+	margin: 20px auto; /* Adds more vertical margin and centers horizontally */
+	width: 60%; /* Matches the width of the input fields above */
+  }
+  
+h2 {
+	margin: 0; /* Removes margin from h2 to align it properly with the checkbox */
+	color: #e0dede; /* Sets the color to match other labels */
+	font-size: 18px; /* Matches the font size with other elements */
+  }
+  
+button{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #573b8a;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+button:hover{
+	background: #6d44b8;
+}
+#chk:checked ~ .Testing label{
+	transform: scale(.6);
+}

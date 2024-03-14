@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>pdf test</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/jspdf.plugin.autotable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.js"></script>
+  <script src="DavidLibre-Regular-normal.js"></script>
+  <script src="./script.js"></script>
+</head>
+<body>
+  <div class="main">    
+    <div class="Testing">
+      <form>
+        <label for="chk" aria-hidden="true">Testing PDF</label>
+		<h2>Client info</h2>
+		<input type="text" id="full_name" name="full name" placeholder="full name" required="">
+		<input type="text" id="id_number" name="id" placeholder="id" required="">
+		<input type="text" id="phone_number" name="phone" placeholder="phone number" required="">
+		<input type="text" id="email_address" name="email" placeholder="email" required="">
+		<input type="text" id="credit_card" name="cc" placeholder="4580 4580 4580 4580" required="">
+		<h2>Event info</h2>
+		<input type="text" id="event_name" name="event_name" placeholder="event description" required="">
+		<input type="text" id="event_date" name="event_date" placeholder="event date" required="">
+		<input type="text" id="event_time" name="event_time" placeholder="event time" required="">
+		<input type="text" id="event_price" name="event_price" placeholder="event price" required="">
+		<input type="text" id="ticket_type" name="ticket_type" placeholder="ticket type" required="">
+		<input type="text" id="receipt_number" name="receipt_number" placeholder="receipt number" required="">
+        <button id="genpdf" type="button" onclick=generate_pdf(event)>Generate PDF</button>
+      </form>
+    </div>
+  </div>  
+</body>
+</html>
