@@ -10,10 +10,10 @@ body{
 }
 .main{
 	width: 350px;
-	height: 950px;
+	height: 1150px;
 	background: red;
 	overflow: hidden;
-	background: url('bg.jpg') no-repeat center / cover;
+	background: url('assets/bg.jpg') no-repeat center / cover;
 	border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
 }
@@ -57,8 +57,10 @@ input{
   
 h2 {
 	margin: 0; /* Removes margin from h2 to align it properly with the checkbox */
-	color: #e0dede; /* Sets the color to match other labels */
+	text-align: center; /* Makes
+	color: white; /* Sets the color to match other labels */
 	font-size: 18px; /* Matches the font size with other elements */
+	color:white;
   }
   
 button{
@@ -83,4 +85,16 @@ button:hover{
 }
 #chk:checked ~ .Testing label{
 	transform: scale(.6);
+}
+h3{
+	font-size: 18px;
+	text-align: center !important;
+	color:white;	
+	display: block !important;
+}
+
+input[type="file"]{
+	padding-left: 10px;
+	padding-right: 15px;
+	text-align: right;
 }
