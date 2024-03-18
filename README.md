@@ -1,4 +1,4 @@
-# PDF Receipt Generator [![Buy Me a Coffee](https://imgur.com/a/xn0dD09)](https://www.buymeacoffee.com/galmitrani1)
+# PDF Receipt Generator [![Buy Me a Coffee](https://i.imgur.com/rlatSuk.png)](https://www.buymeacoffee.com/galmitrani1)
 
 
 ## Introduction
